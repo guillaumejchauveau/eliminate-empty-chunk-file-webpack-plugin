@@ -43,7 +43,7 @@ const webpackConfig = {
   ]
 }
 
-test.always.afterEach('clear tmp', t => {
+test.afterEach.always('clear tmp', t => {
   rimraf.sync('test/tmp')
 })
 
